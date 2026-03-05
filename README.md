@@ -48,7 +48,7 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 <!-- 🔹 DATA SECTION: Only edit below -->
 <script>
 const vipNumbers = [
-  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999" },
+  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999" call: "987654321" },
   { category: "Lucky Numbers", number: "HR 26 9999", price: "₹3,50,000", whatsapp: "919999999999" },
   { category: "Premium Numbers", number: "HR 26 1111", price: "₹4,20,000", whatsapp: "919999999999" },
   { category: "Lucky Numbers", number: "HR 26 0786", price: "₹2,50,000", whatsapp: "919999999999" },
