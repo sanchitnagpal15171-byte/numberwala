@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Plates | Fancy Car Numbers</title>
+<title> numberwala | Fancy Car Numbers</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   /* Global Styles */
@@ -62,15 +61,15 @@
   .testimonial-card h4 {font-weight: 600; color: #111;}
 
   /* Contact */
-  .contact {padding: 80px 50px; background: #111; color: #fff; text-align: center;}
+  .contact {padding: 80px 50px; background: #111; color: Blue; text-align: center;}
   .contact h2 {font-size: 2.5rem; margin-bottom: 30px;}
   .contact form {max-width: 500px; margin: 0 auto;}
   .contact input, .contact textarea {width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 5px; border: none;}
-  .contact button {background: #ffcd00; color: #111; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
+  .contact button {background: #ffcd00; color: Red; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
   .contact button:hover {background: #e6b800;}
 
   /* Footer */
-  footer {padding: 20px 50px; background: #111; color: #fff; text-align: center;}
+  footer {padding: 20px 50px; background: #111; color: Orange; text-align: center;}
   footer p {font-size: 0.9rem;}
   
   @media (max-width: 768px) {
