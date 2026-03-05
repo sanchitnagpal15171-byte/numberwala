@@ -27,7 +27,7 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 <header>
 <h1>VIP Car Numbers</h1>
 <p>Buy Premium Fancy Vehicle Numbers</p>
-<p1></p1>Your Number, Your Identity </p1>
+<p1>Your Number, Your Identity </p1>
 </header>
 
 <nav>
