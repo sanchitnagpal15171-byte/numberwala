@@ -27,6 +27,7 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 <header>
 <h1>VIP Car Numbers</h1>
 <p>Buy Premium Fancy Vehicle Numbers</p>
+<p1></p1>Your Number, Your Identity </p1>
 </header>
 
 <nav>
@@ -37,8 +38,8 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 
 <section class="hero">
 <h1>Get Your Dream VIP Number</h1>
-<p>Premium HR Fancy Numbers Available
-Luxury begins with Right Number</p>
+<p>Premium HR Fancy Numbers Available</p>  
+<p1>Luxury begins with Right Number</p1>
 </section>
 
 <div class="container">
