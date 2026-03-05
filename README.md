@@ -15,7 +15,7 @@
   header {display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #111;}
   header .logo {font-size: 1.8rem; font-weight: 700; color: #fff;}
   nav ul {list-style: none; display: flex; gap: 25px;}
-  nav ul li a {color: Black; font-weight: 500; transition: 0.3s;}
+  nav ul li a {color: White; font-weight: 500; transition: 0.3s;}
   nav ul li a:hover {color: #ffcd00;}
 
   /* Hero Section */
