@@ -1,90 +1,190 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP Car Numbers Dealer</title>
+<title>Elite Plates | Fancy Car Numbers</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{font-family:Arial;margin:0;background:#f4f4f4;}
-header{background:#000;color:#fff;padding:20px;text-align:center;}
-nav{background:#333;padding:10px;text-align:center;}
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
-nav a.call-btn{background:#ff0000;padding:8px 15px;border-radius:5px;}
-.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');background-size:cover;color:white;padding:120px 20px;text-align:center;}
-.hero h1{font-size:50px;}
-.container{padding:40px;text-align:center;}
-.card{background:white;display:inline-block;width:260px;margin:15px;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
-.number{font-size:28px;font-weight:bold;}
-.price{color:green;font-size:20px;margin:10px 0;}
-.btn{background:#25D366;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;display:inline-block;margin-top:10px;}
-footer{background:black;color:white;text-align:center;padding:20px;margin-top:40px;}
-h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
-.call-whatsapp{margin:20px;text-align:center;}
-.call-whatsapp a{margin:5px;}
+  /* Global Styles */
+  * {margin: 0; padding: 0; box-sizing: border-box;}
+  body {font-family: 'Montserrat', sans-serif; color: #1a1a1a; background-color: #f8f8f8; line-height: 1.6;}
+  a {text-decoration: none; color: inherit;}
+  img {max-width: 100%; display: block;}
+
+  /* Header */
+  header {display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #111;}
+  header .logo {font-size: 1.8rem; font-weight: 700; color: #fff;}
+  nav ul {list-style: none; display: flex; gap: 25px;}
+  nav ul li a {color: #fff; font-weight: 500; transition: 0.3s;}
+  nav ul li a:hover {color: #ffcd00;}
+
+  /* Hero Section */
+  .hero {display: flex; align-items: center; justify-content: space-between; padding: 80px 50px; background: url('https://images.unsplash.com/photo-1563720221162-cd460fc6f26e') center/cover no-repeat; color: #fff;}
+  .hero-text {max-width: 600px;}
+  .hero-text h1 {font-size: 3rem; margin-bottom: 20px;}
+  .hero-text p {font-size: 1.2rem; margin-bottom: 30px;}
+  .hero-text a {background: #ffcd00; color: #111; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
+  .hero-text a:hover {background: #e6b800;}
+
+  /* Services */
+  .services {padding: 80px 50px; background: #fff; text-align: center;}
+  .services h2 {font-size: 2.5rem; margin-bottom: 50px;}
+  .service-card {display: inline-block; width: 300px; background: #f4f4f4; margin: 15px; border-radius: 10px; padding: 30px; transition: 0.3s;}
+  .service-card:hover {transform: translateY(-10px);}
+  .service-card h3 {margin-bottom: 15px; color: #111;}
+  .service-card p {color: #555;}
+
+  /* Gallery */
+  .gallery {padding: 80px 50px; background: #f0f0f0; text-align: center;}
+  .gallery h2 {font-size: 2.5rem; margin-bottom: 50px;}
+  .gallery-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
+  .gallery-grid img {border-radius: 10px; transition: 0.3s;}
+  .gallery-grid img:hover {transform: scale(1.05);}
+
+  /* Pricing */
+  .pricing {padding: 80px 50px; text-align: center; background: #fff;}
+  .pricing h2 {font-size: 2.5rem; margin-bottom: 50px;}
+  .pricing-cards {display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;}
+  .pricing-card {background: #f4f4f4; padding: 40px; border-radius: 15px; width: 300px; transition: 0.3s;}
+  .pricing-card:hover {transform: translateY(-10px);}
+  .pricing-card h3 {margin-bottom: 15px;}
+  .pricing-card p {margin-bottom: 25px; color: #555;}
+  .pricing-card span {display: block; font-size: 1.8rem; font-weight: 700; margin-bottom: 20px;}
+  .pricing-card a {background: #ffcd00; color: #111; padding: 12px 25px; border-radius: 5px; font-weight: 600;}
+
+  /* Testimonials */
+  .testimonials {padding: 80px 50px; background: #f0f0f0; text-align: center;}
+  .testimonials h2 {font-size: 2.5rem; margin-bottom: 50px;}
+  .testimonial-card {background: #fff; padding: 30px; border-radius: 10px; display: inline-block; max-width: 300px; margin: 15px; transition: 0.3s;}
+  .testimonial-card:hover {transform: translateY(-10px);}
+  .testimonial-card p {margin-bottom: 15px; color: #555;}
+  .testimonial-card h4 {font-weight: 600; color: #111;}
+
+  /* Contact */
+  .contact {padding: 80px 50px; background: #111; color: #fff; text-align: center;}
+  .contact h2 {font-size: 2.5rem; margin-bottom: 30px;}
+  .contact form {max-width: 500px; margin: 0 auto;}
+  .contact input, .contact textarea {width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 5px; border: none;}
+  .contact button {background: #ffcd00; color: #111; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
+  .contact button:hover {background: #e6b800;}
+
+  /* Footer */
+  footer {padding: 20px 50px; background: #111; color: #fff; text-align: center;}
+  footer p {font-size: 0.9rem;}
+  
+  @media (max-width: 768px) {
+    header {flex-direction: column; gap: 15px;}
+    .hero {flex-direction: column; text-align: center; gap: 30px;}
+    .pricing-cards {flex-direction: column; align-items: center;}
+  }
 </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
-<h1>VIP Car Numbers</h1>
-<p>Buy Premium Fancy Vehicle Numbers</p>
-<p1>Your Number, Your Identity </p1>
+  <div class="logo">Elite Plates</div>
+  <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">VIP Numbers</a>
-<a href="tel:+919876543210" class="call-btn">Call Us</a>
-</nav>
-
+<!-- Hero Section -->
 <section class="hero">
-<h1>Get Your Dream VIP Number</h1>
-<p>Premium HR Fancy Numbers Available</p>  
-<p1>Luxury begins with Right Number</p1>
+  <div class="hero-text">
+    <h1>Drive Your Status. Own the Plate.</h1>
+    <p>Premium, unique, and memorable car numbers for those who demand the best.</p>
+    <a href="#contact">Book Your Plate</a>
+  </div>
 </section>
 
-<div class="container">
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2>Our Exclusive Services</h2>
+  <div class="service-card">
+    <h3>Luxury Number Plates</h3>
+    <p>Exclusive, one-of-a-kind number plates that turn heads wherever you go.</p>
+  </div>
+  <div class="service-card">
+    <h3>Custom Designs</h3>
+    <p>Create a unique plate that matches your personality and style.</p>
+  </div>
+  <div class="service-card">
+    <h3>VIP Consultation</h3>
+    <p>Expert advice to secure the most prestigious numbers available.</p>
+  </div>
+</section>
 
-<h2>Available VIP Numbers</h2>
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <h2>Gallery of Elite Plates</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1612874749256-6c08e4b6a41f" alt="Fancy Number Plate 1">
+    <img src="https://images.unsplash.com/photo-1597009112547-3c7b6a8b0320" alt="Fancy Number Plate 2">
+    <img src="https://images.unsplash.com/photo-1612874749288-8bde02c8f2f4" alt="Fancy Number Plate 3">
+    <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4433c5" alt="Fancy Number Plate 4">
+  </div>
+</section>
 
-<!-- 🔹 DATA SECTION: Only edit below -->
-<script>
-const vipNumbers = [
-  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999"},
-  { category: "Lucky Numbers", number: "HR 26 9999", price: "₹3,50,000", whatsapp: "919999999999"},
-  { category: "Premium Numbers", number: "HR 26 1111", price: "₹4,20,000", whatsapp: "919999999999"},
-  { category: "Lucky Numbers", number: "HR 26 0786", price: "₹2,50,000", whatsapp: "919999999999"},
-  { category: "Special Numbers", number: "HR 26 2026", price: "₹6,00,000", whatsapp: "919876543210"}
-];
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <h2>Our Packages</h2>
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <h3>Silver</h3>
+      <span>$500</span>
+      <p>Standard numbers with elegant design options.</p>
+      <a href="#contact">Choose Plan</a>
+    </div>
+    <div class="pricing-card">
+      <h3>Gold</h3>
+      <span>$1200</span>
+      <p>Premium numbers with exclusive customization.</p>
+      <a href="#contact">Choose Plan</a>
+    </div>
+    <div class="pricing-card">
+      <h3>Platinum</h3>
+      <span>$2500</span>
+      <p>Ultra-exclusive VIP numbers with personal consultation.</p>
+      <a href="#contact">Choose Plan</a>
+    </div>
+  </div>
+</section>
 
-// Group numbers by category
-const categories = {};
-vipNumbers.forEach(vip => {
-  if(!categories[vip.category]) categories[vip.category] = [];
-  categories[vip.category].push(vip);
-});
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-card">
+    <p>"Elite Plates transformed my car’s presence. Truly exceptional service!"</p>
+    <h4>- John D.</h4>
+  </div>
+  <div class="testimonial-card">
+    <p>"The number plate design was unique and worth every penny. Highly recommend!"</p>
+    <h4>- Sarah K.</h4>
+  </div>
+</section>
 
-// Display each category with numbers
-for (let cat in categories) {
-  document.write(`<h3>${cat}</h3>`); // Subheader
-  categories[cat].forEach(vip => {
-    document.write(`<div class="card">
-      <div class="number">${vip.number}</div>
-      <div class="price">${vip.price}</div>
-      <div class="call-whatsapp">
-        <a class="btn" href="https://wa.me/${vip.whatsapp}">WhatsApp</a>
-        <a class="btn" href="tel:+${vip.whatsapp}">Call</a>
-      </div>
-    </div>`);
-  });
-}
-</script>
-<!-- 🔹 END DATA SECTION -->
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Book Your Fancy Number Plate</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea rows="5" placeholder="Message / Requirements"></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
 
-</div>
-
+<!-- Footer -->
 <footer>
-<p>📞 Contact: +91 98765 43210</p>
-<p>© 2026 VIP Car Numbers Dealer</p>
+  <p>&copy; 2026 Elite Plates. All Rights Reserved.</p>
 </footer>
 
 </body>
