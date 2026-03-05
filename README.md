@@ -37,7 +37,8 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 
 <section class="hero">
 <h1>Get Your Dream VIP Number</h1>
-<p>Premium HR / DL Fancy Numbers Available</p>
+<p>Premium HR Fancy Numbers Available
+Luxury begins with Right Number</p>
 </section>
 
 <div class="container">
