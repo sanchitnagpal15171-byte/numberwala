@@ -32,7 +32,6 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 <nav>
 <a href="#">Home</a>
 <a href="#">VIP Numbers</a>
-<a href="#">Contact</a>
 <a href="tel:+919876543210" class="call-btn">Call Us</a>
 </nav>
 
@@ -48,11 +47,11 @@ h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
 <!-- 🔹 DATA SECTION: Only edit below -->
 <script>
 const vipNumbers = [
-  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999" },
-  { category: "Lucky Numbers", number: "HR 26 9999", price: "₹3,50,000", whatsapp: "919999999999" },
-  { category: "Premium Numbers", number: "HR 26 1111", price: "₹4,20,000", whatsapp: "919999999999" },
-  { category: "Lucky Numbers", number: "HR 26 0786", price: "₹2,50,000", whatsapp: "919999999999" },
-  { category: "Special Numbers", number: "HR 26 2026", price: "₹6,00,000", whatsapp: "919876543210" }
+  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999" href="tel:+919876543210" class="call-btn">Call Us},
+  { category: "Lucky Numbers", number: "HR 26 9999", price: "₹3,50,000", whatsapp: "919999999999" href="tel:+919876543210" class="call-btn">Call Us },
+  { category: "Premium Numbers", number: "HR 26 1111", price: "₹4,20,000", whatsapp: "919999999999" href="tel:+919876543210" class="call-btn">Call Us },
+  { category: "Lucky Numbers", number: "HR 26 0786", price: "₹2,50,000", whatsapp: "919999999999" href="tel:+919876543210" class="call-btn">Call Us },
+  { category: "Special Numbers", number: "HR 26 2026", price: "₹6,00,000", whatsapp: "919876543210" href="tel:+919876543210" class="call-btn">Call Us }
 ];
 
 // Group numbers by category
