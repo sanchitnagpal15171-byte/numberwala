@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> numberwala | Fancy Car Numbers</title>
+<title>  | Fancy Car Numbers</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   /* Global Styles */
@@ -15,11 +15,11 @@
   header {display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #111;}
   header .logo {font-size: 1.8rem; font-weight: 700; color: #fff;}
   nav ul {list-style: none; display: flex; gap: 25px;}
-  nav ul li a {color: #fff; font-weight: 500; transition: 0.3s;}
+  nav ul li a {color: Black; font-weight: 500; transition: 0.3s;}
   nav ul li a:hover {color: #ffcd00;}
 
   /* Hero Section */
-  .hero {display: flex; align-items: center; justify-content: space-between; padding: 80px 50px; background: url('https://images.unsplash.com/photo-1563720221162-cd460fc6f26e') center/cover no-repeat; color: #fff;}
+  .hero {display: flex; align-items: center; justify-content: space-between; padding: 80px 50px; background: url('https://images.unsplash.com/photo-1563720221162-cd460fc6f26e') center/cover no-repeat; color: orange;}
   .hero-text {max-width: 600px;}
   .hero-text h1 {font-size: 3rem; margin-bottom: 20px;}
   .hero-text p {font-size: 1.2rem; margin-bottom: 30px;}
@@ -65,7 +65,7 @@
   .contact h2 {font-size: 2.5rem; margin-bottom: 30px;}
   .contact form {max-width: 500px; margin: 0 auto;}
   .contact input, .contact textarea {width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 5px; border: none;}
-  .contact button {background: #ffcd00; color: Red; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
+  .contact button {background: #ffcd00; color: silver; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
   .contact button:hover {background: #e6b800;}
 
   /* Footer */
@@ -83,7 +83,7 @@
 
 <!-- Header -->
 <header>
-  <div class="logo">Elite Plates</div>
+  <div class="logo">numberwala_</div>
   <nav>
     <ul>
       <li><a href="#services">Services</a></li>
