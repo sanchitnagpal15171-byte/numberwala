@@ -3,61 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP Car Numbers | Premium Number Plates</title>
+<title>VIP Car Numbers</title>
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#f4f4f4;
 }
 
 header{
-background:#111;
+background:#000;
 color:white;
 padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-header h1{
-margin:0;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-}
-
-.hero{
-background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
-background-size:cover;
-background-position:center;
-height:400px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
 text-align:center;
 }
 
-.hero h2{
-font-size:40px;
-background:rgba(0,0,0,0.6);
-padding:20px;
+.search-box{
+text-align:center;
+padding:30px;
+}
+
+.search-box input{
+padding:10px;
+width:250px;
+font-size:16px;
+}
+
+.search-box button{
+padding:10px 20px;
+background:#d32f2f;
+color:white;
+border:none;
+cursor:pointer;
 }
 
 .container{
-padding:40px;
-}
-
-.numbers{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
+padding:30px;
 }
 
 .card{
@@ -65,99 +51,124 @@ background:white;
 padding:20px;
 border-radius:10px;
 text-align:center;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card h3{
-font-size:28px;
+.card h2{
 color:#d32f2f;
+font-size:28px;
 }
 
 .btn{
 display:inline-block;
-padding:10px 20px;
 margin-top:10px;
-background:#111;
+padding:8px 15px;
+background:black;
 color:white;
 text-decoration:none;
 border-radius:5px;
 }
 
-.contact{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
+.buy{
+background:#28a745;
 }
 
 footer{
-text-align:center;
-padding:15px;
-background:#000;
+background:black;
 color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
+
+<script>
+
+function searchNumber() {
+
+let input = document.getElementById("search").value.toUpperCase();
+let cards = document.getElementsByClassName("card");
+
+for (let i = 0; i < cards.length; i++) {
+
+let number = cards[i].getElementsByTagName("h2")[0];
+
+if (number.innerHTML.indexOf(input) > -1) {
+cards[i].style.display = "";
+} else {
+cards[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>VIP Car Numbers</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#numbers">VIP Numbers</a>
-<a href="#contact">Contact</a>
-</nav>
+<p>Buy Premium Fancy Number Plates</p>
 </header>
 
-<section class="hero">
-<h2>Buy Premium VIP Car Numbers</h2>
-</section>
+<div class="search-box">
 
-<section class="container" id="numbers">
-<h2>Featured VIP Numbers</h2>
+<input type="text" id="search" placeholder="Search VIP Number">
+<button onclick="searchNumber()">Search</button>
 
-<div class="numbers">
-
-<div class="card">
-<h3>0001</h3>
-<p>Premium VIP Number</p>
-<a class="btn" href="tel:+919999999999">Call Now</a>
 </div>
 
-<div class="card">
-<h3>0786</h3>
-<p>Lucky VIP Number</p>
-<a class="btn" href="https://wa.me/919999999999">WhatsApp</a>
-</div>
+<div class="container">
 
 <div class="card">
-<h3>9999</h3>
+<h2>0001</h2>
 <p>Super VIP Number</p>
-<a class="btn" href="tel:+919999999999">Call Now</a>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 0001">Buy / Book</a>
 </div>
 
 <div class="card">
-<h3>1111</h3>
+<h2>0786</h2>
+<p>Lucky Number</p>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 0786">Buy / Book</a>
+</div>
+
+<div class="card">
+<h2>9999</h2>
 <p>Premium VIP Number</p>
-<a class="btn" href="https://wa.me/919999999999">WhatsApp</a>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 9999">Buy / Book</a>
+</div>
+
+<div class="card">
+<h2>1111</h2>
+<p>Luxury VIP Number</p>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 1111">Buy / Book</a>
+</div>
+
+<div class="card">
+<h2>4444</h2>
+<p>Premium Number</p>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 4444">Buy / Book</a>
+</div>
+
+<div class="card">
+<h2>5555</h2>
+<p>Fancy VIP Number</p>
+<a class="btn buy" href="mailto:vipnumbers@gmail.com?subject=Booking for VIP Number 5555">Buy / Book</a>
 </div>
 
 </div>
-</section>
-
-<section class="contact" id="contact">
-<h2>Contact Us</h2>
-<p>Call or WhatsApp for VIP Number Booking</p>
-
-<a class="btn" href="tel:+919999999999">📞 Call Now</a>
-<a class="btn" href="https://wa.me/919999999999">💬 WhatsApp</a>
-
-</section>
 
 <footer>
-<p>© 2026 VIP Car Numbers | All Rights Reserved</p>
+
+<p>Contact Us</p>
+
+<a class="btn" href="tel:+919999999999">📞 Call</a>
+<a class="btn" href="https://wa.me/919999999999">💬 WhatsApp</a>
+<a class="btn" href="mailto:vipnumbers@gmail.com">📧 Email</a>
+
 </footer>
 
 </body>
