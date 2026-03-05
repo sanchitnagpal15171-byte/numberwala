@@ -65,11 +65,11 @@
   .contact h2 {font-size: 2.5rem; margin-bottom: 30px;}
   .contact form {max-width: 500px; margin: 0 auto;}
   .contact input, .contact textarea {width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 5px; border: none;}
-  .contact button {background: #ffcd00; color: silver; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
+  .contact button {background: #ffcd00; color: Black; padding: 15px 30px; font-weight: 600; border-radius: 5px; transition: 0.3s;}
   .contact button:hover {background: #e6b800;}
 
   /* Footer */
-  footer {padding: 20px 50px; background: #111; color: Orange; text-align: center;}
+  footer {padding: 20px 50px; background: #111; color: Black; text-align: center;}
   footer p {font-size: 0.9rem;}
   
   @media (max-width: 768px) {
@@ -89,7 +89,9 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><<a href="tel:+919876543210">
+  <button>Contact Us</button>
+</a></li>
     </ul>
   </nav>
 </header>
@@ -137,19 +139,19 @@
   <div class="pricing-cards">
     <div class="pricing-card">
       <h3>Silver</h3>
-      <span>$500</span>
+      <span>Rs.115000/-</span>
       <p>Standard numbers with elegant design options.</p>
       <a href="#contact">Choose Plan</a>
     </div>
     <div class="pricing-card">
       <h3>Gold</h3>
-      <span>$1200</span>
+      <span>Rs.350000/-</span>
       <p>Premium numbers with exclusive customization.</p>
       <a href="#contact">Choose Plan</a>
     </div>
     <div class="pricing-card">
       <h3>Platinum</h3>
-      <span>$2500</span>
+      <span>Rs.600000/-</span>
       <p>Ultra-exclusive VIP numbers with personal consultation.</p>
       <a href="#contact">Choose Plan</a>
     </div>
@@ -183,7 +185,7 @@
 
 <!-- Footer -->
 <footer>
-  <p>&copy; 2026 Elite Plates. All Rights Reserved.</p>
+  <p>&copy; 2026 numberwala_. All Rights Reserved.</p>
 </footer>
 
 </body>
