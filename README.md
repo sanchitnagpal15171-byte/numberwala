@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Car Numbers Dealer</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f4f4;}
+header{background:#000;color:#fff;padding:20px;text-align:center;}
+nav{background:#333;padding:10px;text-align:center;}
+nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
+nav a.call-btn{background:#ff0000;padding:8px 15px;border-radius:5px;}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');background-size:cover;color:white;padding:120px 20px;text-align:center;}
+.hero h1{font-size:50px;}
+.container{padding:40px;text-align:center;}
+.card{background:white;display:inline-block;width:260px;margin:15px;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.number{font-size:28px;font-weight:bold;}
+.price{color:green;font-size:20px;margin:10px 0;}
+.btn{background:#25D366;color:white;padding:10px 20px;text-decoration:none;border-radius:5px;display:inline-block;margin-top:10px;}
+footer{background:black;color:white;text-align:center;padding:20px;margin-top:40px;}
+h3{margin-top:40px;color:#333;text-align:left;margin-left:10px;}
+.call-whatsapp{margin:20px;text-align:center;}
+.call-whatsapp a{margin:5px;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>VIP Car Numbers</h1>
+<p>Buy Premium Fancy Vehicle Numbers</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">VIP Numbers</a>
+<a href="#">Contact</a>
+<a href="tel:+919876543210" class="call-btn">Call Us</a>
+</nav>
+
+<section class="hero">
+<h1>Get Your Dream VIP Number</h1>
+<p>Premium HR / DL Fancy Numbers Available</p>
+</section>
+
+<div class="container">
+
+<h2>Available VIP Numbers</h2>
+
+<!-- 🔹 DATA SECTION: Only edit below -->
+<script>
+const vipNumbers = [
+  { category: "Premium Numbers", number: "HR 26 0001", price: "₹5,00,000", whatsapp: "919999999999" },
+  { category: "Lucky Numbers", number: "HR 26 9999", price: "₹3,50,000", whatsapp: "919999999999" },
+  { category: "Premium Numbers", number: "HR 26 1111", price: "₹4,20,000", whatsapp: "919999999999" },
+  { category: "Lucky Numbers", number: "HR 26 0786", price: "₹2,50,000", whatsapp: "919999999999" },
+  { category: "Special Numbers", number: "HR 26 2026", price: "₹6,00,000", whatsapp: "919876543210" }
+];
+
+// Group numbers by category
+const categories = {};
+vipNumbers.forEach(vip => {
+  if(!categories[vip.category]) categories[vip.category] = [];
+  categories[vip.category].push(vip);
+});
+
+// Display each category with numbers
+for (let cat in categories) {
+  document.write(`<h3>${cat}</h3>`); // Subheader
+  categories[cat].forEach(vip => {
+    document.write(`<div class="card">
+      <div class="number">${vip.number}</div>
+      <div class="price">${vip.price}</div>
+      <div class="call-whatsapp">
+        <a class="btn" href="https://wa.me/${vip.whatsapp}">WhatsApp</a>
+        <a class="btn" href="tel:+${vip.whatsapp}">Call</a>
+      </div>
+    </div>`);
+  });
+}
+</script>
+<!-- 🔹 END DATA SECTION -->
+
+</div>
+
+<footer>
+<p>📞 Contact: +91 98765 43210</p>
+<p>© 2026 VIP Car Numbers Dealer</p>
+</footer>
+
+</body>
+</html>
